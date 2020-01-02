@@ -4,6 +4,11 @@ $title-font: "Montserrat", sans-serif;
 
 $font-main-color: #222;
 
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 html {
   font-size: 100%;
 } /*16px*/

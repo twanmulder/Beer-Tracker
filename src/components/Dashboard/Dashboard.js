@@ -34,7 +34,7 @@ class Dashboard extends React.Component {
             </div>
           </div>
           <p className="card-saved">
-            You've saved €<span>{(COUNT * 0.9583).toFixed(2)}</span> so far
+            You've saved <span>€{(COUNT * 0.9583).toFixed(2)}</span> so far
           </p>
         </div>
       </div>

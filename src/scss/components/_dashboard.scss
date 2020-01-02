@@ -34,10 +34,12 @@
   justify-content: center;
 
   div {
+    user-select: none;
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
     border: 1px solid;
+    font-size: 1.6rem;
     font-weight: 700;
     text-align: center;
     line-height: 3.9rem;
@@ -60,5 +62,9 @@
   width: 100%;
   text-align: center;
   letter-spacing: 1px;
-  color: color(typography, 2);
+  color: color(typography, 3);
+
+  span {
+    color: color(typography, 2);
+  }
 }
