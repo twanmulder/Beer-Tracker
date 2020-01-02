@@ -37,6 +37,7 @@
   justify-content: center;
 
   sup {
+    width: min-content;
     font-family: $title-font;
     margin-left: 0.5rem;
     vertical-align: top;
@@ -62,9 +63,9 @@
   }
 
   .card-controlMinus {
-    color: color(primary, 3);
-    margin-right: 2rem;
-    border-color: rgba(color(primary, 1), 0.75);
+    margin-right: 1rem;
+    color: color(typography, 2);
+    border-color: transparent;
   }
   .card-controlPlus {
     border-color: transparent;
