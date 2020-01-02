@@ -40,15 +40,16 @@ class Dashboard extends React.Component {
     const COUNTISVISIBLE = this.state.countIsVisible
 
     return (
-      <div className="dashboard">
+      <div
+        className="dashboard"
+        className={
+          COUNTISVISIBLE
+            ? "dashboard dashboard--visible"
+            : "dashboard dashboard--hidden"
+        }
+      >
         <div className="dashboard-card">
-          <h2
-            className={
-              COUNTISVISIBLE
-                ? "card-amount card-amount--visible"
-                : "card-amount card-amount--hidden"
-            }
-          >
+          <h2 className="card-amount">
             <span>{COUNT}</span>
             <sup>BEERS SAVED</sup>
           </h2>
@@ -60,14 +61,7 @@ class Dashboard extends React.Component {
               +
             </div>
           </div>
-          <p
-            className="card-saved"
-            className={
-              COUNTISVISIBLE
-                ? "card-saved card-saved--visible"
-                : "card-saved card-saved--hidden"
-            }
-          >
+          <p className="card-saved">
             You've saved <span>€{(COUNT * 0.9583).toFixed(2)}</span> so far
           </p>
         </div>
