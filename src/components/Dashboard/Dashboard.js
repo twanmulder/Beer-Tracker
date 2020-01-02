@@ -1,19 +1,34 @@
 import React from "react"
+import { beerCountRef } from "../../firebase/references"
 
 class Dashboard extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { count: 0 }
+    this.state = { count: null }
+  }
+
+  componentWillMount() {
+    beerCountRef.on("value", snapshot => {
+      this.setState({ count: snapshot.val() || 0 })
+    })
   }
 
   decrementCounter = () => {
     if (this.state.count > 0) {
-      this.setState({ count: this.state.count - 1 })
+      const count = this.state.count - 1
+      this.setState({ count })
+      this.updateFirebase(count)
     }
   }
 
   incrementCounter = () => {
-    this.setState({ count: this.state.count + 1 })
+    const count = this.state.count + 1
+    this.setState({ count })
+    this.updateFirebase(count)
+  }
+
+  updateFirebase(value) {
+    beerCountRef.set(value)
   }
 
   render() {

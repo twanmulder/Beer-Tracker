@@ -4,6 +4,7 @@ import ReactDOM from "react-dom"
 import App from "./components/App/App"
 
 import "./scss/index.scss"
+import "./firebase/init"
 
 import * as serviceWorker from "./serviceWorker"
 
