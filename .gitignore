@@ -12,7 +12,7 @@
 /build
 
 #firebase
-/src/firebase/secretKey.json
+.env
 
 # misc
 .DS_Store
