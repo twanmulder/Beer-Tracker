@@ -7,7 +7,7 @@ class Dashboard extends React.Component {
     this.state = { count: null }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     beerCountRef.on("value", snapshot => {
       this.setState({ count: snapshot.val() || 0 })
     })
