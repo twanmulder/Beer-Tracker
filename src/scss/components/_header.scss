@@ -4,6 +4,10 @@ header {
   justify-content: center;
   align-items: center;
 
+  @include desktop {
+    padding-left: 2rem;
+  }
+
   h1 {
     color: color(typography, 1i);
     font-size: 1.5em;
@@ -11,5 +15,10 @@ header {
     letter-spacing: 3.5px;
     text-transform: uppercase;
     text-align: center;
+
+    @include desktop {
+      text-align: left;
+      width: 100%;
+    }
   }
 }

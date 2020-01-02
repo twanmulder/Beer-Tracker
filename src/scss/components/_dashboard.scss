@@ -18,6 +18,13 @@
       opacity: 1;
     }
   }
+
+  @include tablet {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    height: auto;
+    border-radius: 2rem;
+  }
 }
 
 .dashboard-card {
@@ -85,5 +92,11 @@
     display: inline-block;
     vertical-align: bottom;
     color: color(typography, 2);
+  }
+
+  @include tablet {
+    margin: 3rem 0rem 1rem 0;
+    position: relative;
+    bottom: 0;
   }
 }
