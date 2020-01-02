@@ -7,8 +7,58 @@
 
 .dashboard-card {
   height: 100%;
+  position: relative;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.06),
     0 22.3px 17.9px rgba(0, 0, 0, 0.036), 0 100px 80px rgba(0, 0, 0, 0.024);
+}
+
+.card-amount {
+  font-family: $body-font;
+  padding: 6rem 1rem 4rem 1rem;
+  font-size: 8rem;
+  text-align: center;
+
+  sup {
+    font-family: $title-font;
+    margin-left: 0.5rem;
+    vertical-align: top;
+    letter-spacing: 2px;
+    font-size: 1.125rem;
+  }
+}
+
+.card-controls {
+  display: flex;
+  justify-content: center;
+
+  div {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 1px solid;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3.9rem;
+  }
+
+  .card-controlMinus {
+    color: color(primary, 3);
+    margin-right: 2rem;
+    border-color: rgba(color(primary, 1), 0.75);
+  }
+  .card-controlPlus {
+    border-color: transparent;
+    background-color: color(primary, 1);
+  }
+}
+
+.card-saved {
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: color(typography, 2);
 }

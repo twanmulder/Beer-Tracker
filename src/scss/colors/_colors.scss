@@ -1,3 +1,23 @@
 @mixin app-bg {
   background: #fefefe;
 }
+$color: (
+  typography: (
+    1: #000,
+    2: #444,
+    3: #969696,
+    4: #dedede,
+    1i: #fff,
+  ),
+  bg: (
+    1: #ffffff,
+    2: #f5f9fc,
+    3: #dde7ef,
+    4: #f5f2ef,
+  ),
+  primary: (
+    1: #ffd843,
+    2: #f1e7c3,
+    3: #c09e31,
+  ),
+);
