@@ -90,8 +90,9 @@
 
   span {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: middle;
     color: color(typography, 2);
+    border-bottom: 2px solid color(primary, 1);
   }
 
   @include tablet {
