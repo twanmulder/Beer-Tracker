@@ -1,0 +1,11 @@
+html,
+body,
+#root {
+  height: 100%;
+  @include app-bg;
+}
+
+#root {
+  max-height: 100vh;
+  overflow: hidden;
+}
