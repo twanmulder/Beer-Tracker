@@ -41,7 +41,6 @@ class Dashboard extends React.Component {
 
     return (
       <div
-        className="dashboard"
         className={
           COUNTISVISIBLE
             ? "dashboard dashboard--visible"
