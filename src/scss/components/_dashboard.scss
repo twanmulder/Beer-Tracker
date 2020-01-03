@@ -8,10 +8,13 @@
     0 0px 17.9px rgba(0, 0, 0, 0.035), 0 0px 33.4px rgba(0, 0, 0, 0.028),
     0 0px 80px rgba(0, 0, 0, 0.02);
 
+  will-change: transform;
+  -webkit-transform: translateY(100vh);
   transform: translateY(100vh);
   transition: all 0.3s ease-in-out;
 
   &.dashboard--visible {
+    -webkit-transform: translateY(0);
     transform: translateY(0);
 
     .dashboard-card {
