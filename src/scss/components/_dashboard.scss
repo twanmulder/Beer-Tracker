@@ -28,6 +28,11 @@
     height: auto;
     border-radius: 2rem;
   }
+
+  @include desktop {
+    margin: 0 0 0 4rem;
+    padding: 1rem 4rem;
+  }
 }
 
 .dashboard-card {
