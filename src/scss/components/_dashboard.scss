@@ -11,7 +11,7 @@
   will-change: transform;
   -webkit-transform: translateY(100vh);
   transform: translateY(100vh);
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 
   &.dashboard--visible {
     -webkit-transform: translateY(0);
